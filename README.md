@@ -1,5 +1,21 @@
 # Recipe-App
 
+## Technology used
+
+- react native expo
+- React navigation
+- NativeWind
+- React native reanimated
+
+- react native heroicons(packages)
+- react native responsive screen
+- masonry list
+- react native async storage
+- react native youtube iframe
+- react native webview
+
+- API endpoint(themealdb.com)
+
 ## Get Started
 
 install dev dependencies

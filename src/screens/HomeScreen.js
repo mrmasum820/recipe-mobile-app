@@ -32,6 +32,7 @@ export default function HomeScreen() {
         "https://themealdb.com/api/json/v1/1/categories.php"
       );
       // console.log('got categories: ', response.data);
+
       if (response && response.data) {
         setCategories(response.data.categories);
       }
@@ -46,6 +47,7 @@ export default function HomeScreen() {
         `https://themealdb.com/api/json/v1/1/filter.php?c=${category}`
       );
       // console.log('got recipes: ',response.data);
+
       if (response && response.data) {
         setMeals(response.data.meals);
       }

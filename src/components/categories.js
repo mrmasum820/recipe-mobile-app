@@ -33,7 +33,7 @@ export default function Categories({
             >
               <View className={"rounded-full p-[6px] " + activeButtonClass}>
                 {/* <Image
-                                source={{uri: cat.strCategoryThumb}}  //uri for dummy data
+                                source={{uri: cat.strCategoryThumb}}
                                 style={{width: hp(6), height: hp(6)}}
                                 className="rounded-full"
                             /> */}

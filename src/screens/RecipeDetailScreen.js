@@ -88,7 +88,6 @@ export default function RecipeDetailScreen(props) {
         <View className="flex-row justify-center">
           <CachedImage
             uri={item.strMealThumb}
-            // sharedTransitionTag={item.strMeal} // this will only work on native image (now using Image from expo-image)
             style={{
               width: wp(100),
               height: hp(50),
@@ -109,6 +108,7 @@ export default function RecipeDetailScreen(props) {
           >
             <ChevronLeftIcon size={hp(3.5)} strokeWidth={4.5} color="#fbbf24" />
           </TouchableOpacity>
+
           <TouchableOpacity
             onPress={() => setIsFavourite(!isFavourite)}
             className="p-2 rounded-full mr-5 bg-white"
@@ -286,6 +286,7 @@ export default function RecipeDetailScreen(props) {
                 })}
               </View>
             </Animated.View>
+
             {/* instructions */}
             <Animated.View
               entering={FadeInDown.delay(300)
@@ -306,7 +307,6 @@ export default function RecipeDetailScreen(props) {
             </Animated.View>
 
             {/* recipe video */}
-
             {meal.strYoutube && (
               <Animated.View
                 entering={FadeInDown.delay(400)

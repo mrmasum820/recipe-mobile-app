@@ -22,6 +22,7 @@ export default function Recipes({ categories, meals }) {
       >
         Recipes
       </Text>
+
       <View>
         {categories.length == 0 || meals.length == 0 ? (
           <Loading size="large" className="mt-20" />
@@ -47,6 +48,7 @@ export default function Recipes({ categories, meals }) {
 
 const RecipeCard = ({ item, index, navigation }) => {
   let isEven = index % 2 == 0;
+
   return (
     <Animated.View
       entering={FadeInDown.delay(index * 100)
@@ -68,6 +70,7 @@ const RecipeCard = ({ item, index, navigation }) => {
                     style={{width: '100%', height: index%3==0? hp(25): hp(35), borderRadius: 35}}
                     className="bg-black/5"
                 /> */}
+
         <CachedImage
           uri={item.strMealThumb}
           style={{
